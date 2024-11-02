@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Stopwatch container styling */
+.stopwatch {
+    text-align: center;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Time display styling */
+#display {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Individual button colors */
+#start {
+    background-color: #28a745;
+    color: white;
+}
+
+#pause {
+    background-color: #ffc107;
+    color: white;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+#lap {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hover effects for buttons */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Lap container styling */
+.laps {
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+/* Individual lap time styling */
+.laps div {
+    font-size: 1.1em;
+    color: #555;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
